@@ -58,22 +58,6 @@ if __name__ == '__main__':
                     say(f"Sure i will play some {query.lower().replace('play ', '')}")
                     playSong(query.lower().replace('play ', ''))
                     say("Anything else you want me to help with")
-                elif "call" and "911" in query.lower():
-                    say("This is 9 1 1, Whats your emergency?")
-                    print("Listening...")
-                    em1 = takeCommand()
-                    say("What is the name of the child")
-                    print("Listening...")
-                    em2 = takeCommand()
-                    say(f"How old is {em2} sir ?")
-                    say(f"If {em2} dont stop making disturbance i will call the police")
-                    say(f"Are you sure that you want to bring police on {em2}")
-                    print("Listening...")
-                    em3 = takeCommand()
-                    if "yes" in em3.lower():
-                        say(f"OK sir police is coming to take {em2}")
-                    else:
-                        say(f"OK sir if {em2} disturbs you again then you may call me")
                 elif "search in youtube" in query.lower():
                     webbrowser.open(
                         f"https://www.youtube.com/results?search_query={query.lower().replace('search ', '').replace('in ', '').replace('youtube ', '')}")
