@@ -1,2 +1,0 @@
-from components.computerVision import objectDetector
-objectDetector()
